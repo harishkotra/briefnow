@@ -71,6 +71,55 @@ function startGeneration() {
     };
 }
 
+// Share as Image
+const shareBtn = document.getElementById('shareBtn');
+shareBtn.addEventListener('click', shareAsImage);
+
+async function shareAsImage() {
+    const briefCard = document.querySelector('.brief-card');
+    const originalText = shareBtn.textContent;
+
+    shareBtn.textContent = 'Capturing...';
+    shareBtn.disabled = true;
+
+    try {
+        const canvas = await html2canvas(briefCard, {
+            scale: 2, // Higher resolution
+            backgroundColor: '#ffffff', // Ensure white background
+            ignoreElements: (element) => element.id === 'shareBtn' // Don't include the button itself
+        });
+
+        canvas.toBlob(async (blob) => {
+            try {
+                // Clipboard API for images
+                await navigator.clipboard.write([
+                    new ClipboardItem({ 'image/png': blob })
+                ]);
+                shareBtn.textContent = 'Copied to Clipboard!';
+            } catch (err) {
+                console.error('Clipboard write failed:', err);
+                shareBtn.textContent = 'Failed';
+                alert('Could not copy to clipboard. Please check browser permissions.');
+            }
+
+            // Reset button after delay
+            setTimeout(() => {
+                shareBtn.textContent = originalText;
+                shareBtn.disabled = false;
+            }, 3000);
+
+        }, 'image/png');
+
+    } catch (err) {
+        console.error('Capture failed:', err);
+        shareBtn.textContent = 'Error';
+        setTimeout(() => {
+            shareBtn.textContent = originalText;
+            shareBtn.disabled = false;
+        }, 3000);
+    }
+}
+
 function renderBrief(data) {
     const { brief, sources } = data;
 
@@ -99,6 +148,7 @@ function renderBrief(data) {
     });
 
     // Smooth scroll
+    resultContainer.style.display = 'block';
     resultContainer.scrollIntoView({ behavior: 'smooth' });
 
     // Save to History (if not just re-rendering)

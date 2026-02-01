@@ -4,16 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Executive Brief Generator</title>
+    <title>BriefNow | Executive Brief Generator</title>
     <link rel="stylesheet" href="styles.css">
     <!-- Using Marked for markdown rendering -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 </head>
 
 <body>
     <div class="container">
         <header>
-            <h1>Executive Brief Generator</h1>
+            <h1>BriefNow | Executive Brief Generator</h1>
             <p class="subtitle">Real-time Intelligence & Analysis Agent</p>
         </header>
 
@@ -33,8 +34,11 @@
         <section id="result-container">
             <div class="brief-card">
                 <div class="brief-header">
-                    <div class="brief-title">Executive Intelligence Briefing</div>
-                    <div class="brief-date" id="briefDate"></div>
+                    <div>
+                        <div class="brief-title">Executive Intelligence Briefing</div>
+                        <div class="brief-date" id="briefDate"></div>
+                    </div>
+                    <button id="shareBtn" class="share-btn">Share Image</button>
                 </div>
                 <div class="brief-content" id="briefContent">
                     <!-- Markdown content here -->
