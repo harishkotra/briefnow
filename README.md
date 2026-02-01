@@ -23,6 +23,10 @@ An agentic AI application that researches live news and generates concise execut
 <img width="1282" height="1023" alt="Screenshot at Feb 01 11-05-47" src="https://github.com/user-attachments/assets/3d0fde03-d779-43fc-a399-33a5dddf9fa7" />
 <img width="1173" height="931" alt="Screenshot at Feb 01 12-45-19" src="https://github.com/user-attachments/assets/22f2cb69-a6b1-4a42-98b1-406f27e3a2b1" />
 
+<img width="2766" height="4316" alt="screencapture-localhost-3000-2026-02-01-17_10_21" src="https://github.com/user-attachments/assets/d7786597-1fe8-4e26-ad77-1687cdaeac04" />
+<img width="2766" height="4086" alt="screencapture-localhost-3000-2026-02-01-17_09_14" src="https://github.com/user-attachments/assets/bf64802f-e4ff-4c11-9cbb-4926ffc4ab55" />
+
+
 ## 🛠️ Setup
 
 ### 1. Prerequisites
