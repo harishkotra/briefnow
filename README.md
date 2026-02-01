@@ -15,6 +15,14 @@ An agentic AI application that researches live news and generates concise execut
 - **Ollama**: Local LLM for summarization (Llama 3 recommended).
 - **Vanilla JS**: Lightweight, fast UI.
 
+### Output
+
+<img width="977" height="668" alt="Screenshot at Feb 01 10-52-18" src="https://github.com/user-attachments/assets/ccde5846-5af4-43f8-92d8-93a0f6fba5f2" />
+<img width="1314" height="954" alt="Screenshot at Feb 01 11-05-14" src="https://github.com/user-attachments/assets/c164630c-e724-4c42-b83d-37e7d6edd312" />
+<img width="1158" height="830" alt="Screenshot at Feb 01 11-05-20" src="https://github.com/user-attachments/assets/ba5834d2-d1d9-4e0f-a72b-61c8b3e0761e" />
+<img width="1282" height="1023" alt="Screenshot at Feb 01 11-05-47" src="https://github.com/user-attachments/assets/3d0fde03-d779-43fc-a399-33a5dddf9fa7" />
+<img width="1173" height="931" alt="Screenshot at Feb 01 12-45-19" src="https://github.com/user-attachments/assets/22f2cb69-a6b1-4a42-98b1-406f27e3a2b1" />
+
 ## 🛠️ Setup
 
 ### 1. Prerequisites
