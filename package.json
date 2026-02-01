@@ -1,0 +1,19 @@
+{
+    "name": "news-brief-agent",
+    "version": "1.0.0",
+    "description": "Real-Time News Executive Brief Generator",
+    "type": "module",
+    "main": "server/index.js",
+    "scripts": {
+        "start": "node server/index.js",
+        "dev": "node --watch server/index.js"
+    },
+    "dependencies": {
+        "express": "^4.18.2",
+        "axios": "^1.6.0",
+        "cors": "^2.8.5",
+        "dotenv": "^16.3.1",
+        "@modelcontextprotocol/sdk": "^0.6.0",
+        "@brightdata/mcp": "latest"
+    }
+}

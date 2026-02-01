@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Executive Brief Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Using Marked for markdown rendering -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Executive Brief Generator</h1>
+            <p class="subtitle">Real-time Intelligence & Analysis Agent</p>
+        </header>
+
+        <section class="input-group">
+            <div class="input-row">
+                <input type="text" id="topicInput" placeholder="Enter topic (e.g., 'AI Regulation News')..."
+                    autocomplete="off">
+                <button id="generateBtn">Generate Brief</button>
+            </div>
+
+        </section>
+
+        <div id="progress-container">
+            <!-- Live logs will appear here -->
+        </div>
+
+        <section id="result-container">
+            <div class="brief-card">
+                <div class="brief-header">
+                    <div class="brief-title">Executive Intelligence Briefing</div>
+                    <div class="brief-date" id="briefDate"></div>
+                </div>
+                <div class="brief-content" id="briefContent">
+                    <!-- Markdown content here -->
+                </div>
+                <div class="sources-section" id="sourcesSection">
+                    <h4>Sources</h4>
+                    <div id="sourcesList"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="history-container" style="display: none;">
+            <h3 class="history-title">Recent Briefs</h3>
+            <div id="historyList" class="history-list"></div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="https://github.com/harishkotra/briefnow" target="_blank">GitHub Repo</a>
+            <span class="separator">•</span>
+            <span>Built by <a href="https://harishkotra.me" target="_blank">Harish Kotra</a></span>
+            <span class="separator">•</span>
+            <span>Powered by BrightData</span>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
